@@ -1,6 +1,6 @@
 import os
 from preprocessing import load_data
-from network import build_cnn
+from cnn import build_cnn
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
