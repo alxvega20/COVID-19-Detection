@@ -1,8 +1,14 @@
+# pyproject.toml  ── lets setuptools install `src/` as a package
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "covid19_detection"
-version = "0.0.1"
-description = "COVID-19 Chest X-ray classifier"
-dependencies = []
+version = "0.1.0"
+description = "COVID-19 Chest-X-ray classifier"
+readme = "README.md"
+requires-python = ">=3.9"
 
 [tool.setuptools.packages.find]
 where = ["src"]
