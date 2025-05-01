@@ -1,0 +1,8 @@
+[project]
+name = "covid19_detection"
+version = "0.0.1"
+description = "COVID-19 Chest X-ray classifier"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
