@@ -1,0 +1,22 @@
+# ── Python byte-code ──────────────────────────────
+__pycache__/
+*.py[cod]
+
+# ── Virtual environments ──────────────────────────
+.venv/
+env/
+venv/
+
+# ── Data & model artefacts (keep them out of Git) ─
+data/
+checkpoints/
+*.pt
+*.pth
+
+# ── Jupyter notebooks ─────────────────────────────
+.ipynb_checkpoints/
+
+# ── Misc OS/editor cruft ──────────────────────────
+*.log
+*.tmp
+.DS_Store
