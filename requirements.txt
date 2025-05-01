@@ -8,3 +8,4 @@ albumentations
 tqdm
 pyyaml
 matplotlib
+tensorboard
