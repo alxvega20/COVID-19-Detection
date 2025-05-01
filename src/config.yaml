@@ -1,4 +1,3 @@
-# src/config.yaml
 data:
   train_manifest: data/interim/train_manifest.csv
   val_manifest:   data/interim/val_manifest.csv
@@ -6,7 +5,7 @@ data:
   num_workers: 4
 
 model:
-  arch: resnet18          # future-proof if you add more back-bones
+  arch: resnet18
   pretrained: true
   num_classes: 2
 
@@ -15,9 +14,9 @@ train:
   batch_size: 32
   lr: 1e-4
   weight_decay: 1e-4
-  scheduler: cosine       # options: cosine | reduce_on_plateau | none
+  scheduler: cosine            # cosine | reduce_on_plateau | none
   early_stopping_patience: 5
-  class_weights: [0.75, 1.25]   # Normal, COVID (handles imbalance)
+  class_weights: [0.75, 1.25]  # Normal, COVID
 
 logging:
   save_dir: checkpoints
